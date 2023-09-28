@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.epilepsy {
+  background: red;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
