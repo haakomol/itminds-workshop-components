@@ -30,23 +30,29 @@ export default function NoteEditor({
 
   return (
     <div className="flex-1 flex-col">
-      <label htmlFor="title">title</label>
-      <input
-        id="title"
-        name="title"
-        type="text"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        className="mb-1.5 text-black p-4"
-      />
-      <label htmlFor="content">content</label>
-      <textarea
-        id="content"
-        name="content"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-        className="mb-1.5 text-black p-4"
-      />
+      <div>
+        <label htmlFor="title">title</label>
+        <input
+          id="title"
+          name="title"
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          className="mb-1.5 text-black p-4"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="content">content</label>
+        <textarea
+          id="content"
+          name="content"
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          className="mb-1.5 text-black p-4"
+        />
+      </div>
+
       <button
         className="p-4 border-2 border-solid border-white cursor-pointer"
         onClick={() =>
